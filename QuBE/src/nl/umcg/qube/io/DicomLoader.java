@@ -131,16 +131,28 @@ public class DicomLoader {
             SourceImage image = new SourceImage(al);
             int count = image.getNumberOfBufferedImages();
             int picwidth = image.getHeight(), picheight = image.getHeight();
+            int downscale = Math.max(1, Math.max((picwidth + 511) / 512, (picheight + 511) / 512));
+            int divider = 1;
+            int bits = al.get(TagFromName.BitsStored).getSingleIntegerValueOrDefault(8);
+
+            divider = (1 << (bits - 8));
+            picwidth = picwidth / downscale;
+            picheight = picheight / downscale;
             in.close();
             CAGFrame[] frames = new CAGFrame[count];
 
             for (int i = 0; i < count; i++) {
                 byte[][] values = new byte[picheight][picwidth];
 
+                // int max = 0;
                 Raster cur = image.getBufferedImage(i).getRaster();
                 for (int x = 0; x < picwidth; x++)
-                    for (int y = 0; y < picheight; y++)
-                        values[y][x] = (byte) cur.getSample(x, y, 0);
+                    for (int y = 0; y < picheight; y++) {
+                        // max = Math.max(cur.getSample(x*downscale,
+                        // y*downscale, 0), max);
+                        values[y][x] = (byte) (cur.getSample(x * downscale, y * downscale, 0) / divider);
+                    }
+                // System.out.println(max);
                 frames[i] = new CAGFrame(values);
             }
             CAGSequence sequence = new CAGSequence(frames, id);
