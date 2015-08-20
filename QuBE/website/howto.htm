@@ -1,0 +1,29 @@
+<HTML>
+<script language="javascript" src="script.js"></script>
+
+<script>showHeader("howto", "Howto");</script>
+<H2>How to use the QuBE program</H2>
+
+<H3>Start QuBE with Java webstart</H3>
+<P>
+<span style="background-color:#888;color:#fff;padding:10px"><a href="http://www.stellarjackpot.com/qube"><span style="color:#fff">Start QuBE</span></a></span>
+<br/><br/>
+(Please make sure Java 7 or later is installed. This is a <a href="http://www.java.com/getjava/">freely available download</a> from Sun).
+</P>
+
+<H3>Example session</H3>
+<P>
+The first screen of the QuBE program just asks for a DICOM file to load:<br/>
+<img src="images/screen1.png"/>
+<p>
+After loading the file, the first frame of the angiography run is shown:<br/>
+(For demonstration purposes, a very poor blush sequence has been used).
+<img src="images/screen2_def.png"/>
+The run can be played, or paused and any frame can be selected by dragging the slider at the bottom.
+By clicking in the image, the polygon where blush is expected can be constructed.
+<img src="images/screen3_def.png"/>
+After a satisfying polygon is drawn, the "Recalculate" button will start the QuBE calculation process. This may take a while, depending on the computer hardware the program is run on.
+In this case, a very poor QuBE value is obtained, as hardly any darkening of the area of interest occurred.
+<img src="images/screen4_def.png"/>
+<script>showFooter();</script>
+

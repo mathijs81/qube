@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp spec="1.0+" codebase="http://www.stellarjackpot.com/qube/" >
+  <information>
+     <title>Java Advanced Imaging Image I/O Tools 1.1</title>
+     <vendor>Sun Microsystems Inc.</vendor>
+     <homepage href="http://jai-imageio.dev.java.net"/>
+     <description>Java Advanced Imaging Image I/O Tools</description>
+     <offline-allowed/>
+  </information>
+
+  <security>
+    <all-permissions/>
+  </security>
+
+  <resources os="Windows">
+    <jar href="win1.jar" download="eager"/>
+    <jar href="win2.jar" download="eager"/>
+
+    <nativelib href="win3.dll.jar" download="eager"/>
+    <nativelib href="win4.dll.jar" download="eager"/>
+    <nativelib href="win5.dll.jar" download="eager"/>
+  </resources>
+
+  <resources os="Linux" arch="i386">
+    <jar href="lin1.jar" download="eager"/>
+    <jar href="lin2.jar" download="eager"/>
+
+    <nativelib href="lin3.so.jar" download="eager"/>
+  </resources>
+
+  <component-desc />
+</jnlp>

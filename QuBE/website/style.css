@@ -1,0 +1,94 @@
+body
+{
+/*	background-color: #5588CC;*/
+/*	background-color: #00478E;*/
+	background-color: #A0C0FF;
+	color: #000000;
+	overflow-y: hidden;
+	text-align: center;
+}
+
+a:link {color: #0000FF}     /* unvisited link */
+a:visited {color: #0000FF}  /* visited link */
+a:hover {color: #8888FF}   /* mouse over link */
+a:active {color: #0000FF}   /* selected link */
+
+img
+{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+td
+{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.logo
+{
+	border: solid 2px #222266;
+  	padding: 5 5 5 5;
+  	margin: 0 0 0 0;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.menu
+{
+	border: solid 2px #222266;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 5px 5px 5px 5px;
+	margin-top: 10px;
+}
+
+H2
+{
+	padding:3 3 3 3;
+	margin: 5 0 5 0;
+	background-color: #FFFF88;
+	border: solid 1px #AAAA22;
+	text-align: center;
+}
+
+
+DIV.main
+{
+	border: solid 2px #222266;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 5px 15px 5px 15px;
+	margin-left: 10px;
+}
+
+DIV.main P
+{
+  padding: 0 0 0 0;
+  margin: 0 0 20 10;
+}
+
+DIV.main H3
+{
+  margin: 10 0 5 0;
+  padding: 0 0 0 0;
+}
+
+.bottom
+{
+	border: solid 2px #222266;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 5px 15px 5px 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.document
+{
+	width: 100%;
+	height:100%;
+	overflow-y: auto;
+}

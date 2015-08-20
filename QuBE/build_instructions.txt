@@ -1,0 +1,11 @@
+Sign all jar files using your certificate:
+
+jarsigner -keystore ../qube.keystore commons-codec-1.3.jar qube
+
+Export compiled code to qube_main.jar, also sign.
+
+
+To update sourceforge project site:
+
+cd website
+rsync -avz . thijser@web.sourceforge.net:/home/project-web/qube/htdocs/.
