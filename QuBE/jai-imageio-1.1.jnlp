@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<jnlp spec="1.0+" codebase="http://www.stellarjackpot.com/qube/" >
+<jnlp spec="1.0+" codebase="https://www.stellarjackpot.com/qube/" >
   <information>
      <title>Java Advanced Imaging Image I/O Tools 1.1</title>
      <vendor>Sun Microsystems Inc.</vendor>
